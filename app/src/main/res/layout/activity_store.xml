@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ln_gian_hang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainBookActivity"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#880E4F">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="@color/dark_gray"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarGianHang"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                app:titleTextColor="@color/background_search_view_gian_hang"
+                android:background="#880E4F">
+            </android.support.v7.widget.Toolbar>
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/btnMaterSearchViewGianHang"
+                style="@style/MaterialSearchViewStyleGianHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                />
+            <include layout="@layout/custom_search_view" />
+        </FrameLayout>
+        
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerGianHang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+
+    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="bottom"
+        android:background="#880E4F"/>
+</FrameLayout>
+</LinearLayout>
+    <include  layout="@layout/layout_drawer_gian_hang"/>
+
+
+</android.support.v4.widget.DrawerLayout>

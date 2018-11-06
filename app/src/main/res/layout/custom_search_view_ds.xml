@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@drawable/boder_text_gian_hang">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/lnearGianHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:background="#00000000"/>
+            <TextView
+                android:id="@+id/btnSearchGianHang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="15sp"
+                android:inputType="textImeMultiLine"
+                android:windowSoftInputMode="stateUnchanged"
+                android:hint="@string/tk"
+                android:textColorHint="@android:color/darker_gray"
+                />
+            <ImageButton
+                android:id="@+id/btnDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_storage_black_24dp"
+                android:background="#00000000"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/searchV_Ds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/MaterialSearchViewStyleGianHang"
+        android:layout_weight="1"/>
+</FrameLayout>

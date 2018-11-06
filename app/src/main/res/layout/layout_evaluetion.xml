@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ln_danh_gia"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ln_chi_tiet"
+    android:orientation="vertical"
+    android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:text="@string/danh_gia"
+    android:gravity="center|left"
+    android:paddingLeft="10sp"
+    android:textColor="@android:color/black"
+    android:background="@drawable/border_text_bt"
+    android:drawableRight="@drawable/ic_star_black_24dp"
+    android:paddingRight="5sp"/>
+    <TextView
+        android:id="@+id/txtSLDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:gravity="center|left"
+        android:paddingLeft="10sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        />
+    <TextView
+        android:id="@+id/txtGiaTriDG"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:textColor="@color/red_background"
+        android:text="5.0"
+        android:textSize="40sp"
+        android:gravity="center"
+
+        android:layout_marginTop="5sp"
+        android:background="@drawable/border_text_danh_gia"/>
+    <Button
+        android:id="@+id/btnVietNX"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:text="@string/v_nhan_xet"
+        android:background="@drawable/boder_text_canhan"
+        android:layout_margin="10sp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btnXemNX"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:text="@string/x_nhan_xet"
+        android:background="@drawable/boder_text_canhan"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10sp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:visibility="gone"/>
+</LinearLayout>

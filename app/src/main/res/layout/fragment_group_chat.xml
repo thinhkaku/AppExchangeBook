@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gvNhanTin"
+            android:numColumns="1"/>
+        <TextView
+            android:id="@+id/txtGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_group"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:background="@drawable/boder_text_canhan"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/chat_shop"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20sp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:id="@+id/lneaTinNhan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15sp">
+    <LinearLayout
+        android:id="@+id/lnearBorderTinNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/txtTinNhan"
+            emojicon:emojiconSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameImage"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="20sp">
+        <ImageView
+            android:id="@+id/imgNoiDungTinNhan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="20sp"/>
+        <TextView
+            android:id="@+id/txtDaXem"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_gravity="bottom"
+            android:text="Đã xem"
+            android:gravity="right"
+            android:paddingRight="5sp"/>
+    </FrameLayout>
+
+</LinearLayout>

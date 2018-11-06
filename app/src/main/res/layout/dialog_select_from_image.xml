@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350sp"
+    android:layout_height="250sp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/back_ground_app">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:text="Chọn ảnh từ"
+    android:textColor="@android:color/white"
+    android:textSize="30sp"
+    android:gravity="center|left"
+    android:textStyle="bold"
+    android:background="@color/theme_primary_dark"
+    android:paddingLeft="5sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lnearCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_camera_black_96dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Máy ảnh"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_primary"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:background="@color/theme_primary_dark"/>
+        <LinearLayout
+            android:id="@+id/lnearAbum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_panorama_black_96dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Thư viện"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_primary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

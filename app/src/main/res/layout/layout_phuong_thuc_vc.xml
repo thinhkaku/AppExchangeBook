@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_weight="5"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:text="@string/chuyen1"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_weight="5"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:text="@string/chuyen2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:hint="@string/ghi_chu"
+        android:background="@drawable/border_text_bt"
+        android:gravity="center|left|top"
+        android:paddingLeft="10sp"
+        android:textColor="@color/black"
+        android:layout_margin="5sp"/>
+
+
+</LinearLayout>

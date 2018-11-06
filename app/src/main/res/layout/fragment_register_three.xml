@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_gravity="top|center"
+            app:cardElevation="5sp">
+            <ImageView
+                android:id="@+id/imgHinhDaiDienDangKi"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                app:srcCompat="@drawable/side_nav_bar"/>
+            <ImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_check_black_24dp"
+                android:layout_gravity="right"
+                android:visibility="invisible"/>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btnHoanTat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/button_dangnhap"
+        android:text="Hoàn tất"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnTroLaiDangKi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_dangnhap"
+        android:text="Trở lại"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

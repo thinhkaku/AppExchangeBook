@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:drawableLeft="@drawable/ic_group_black_24dp"
+        android:drawablePadding="15sp"
+        android:hint="@string/tai_khoan"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="#E0E0E0"
+        android:padding="15sp"
+        android:background="@drawable/background_edittext"
+        android:id="@+id/edtUserName"
+        android:textColor="@android:color/white" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="@string/mk"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#E0E0E0"
+        android:layout_marginTop="20sp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="15sp"
+        android:padding="15sp"
+        android:background="@drawable/background_edittext"
+        android:id="@+id/edtPassword"
+        android:textColor="@android:color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:textColor="#76FF03"
+            android:id="@+id/btnQuenMatKhau"
+            android:layout_marginRight="30sp"
+            android:text="@string/forget_pass"/>
+        <TextView
+            android:layout_width="150sp"
+            android:text="@string/remember_pass"
+            android:gravity="center|right"
+            android:textStyle="italic"
+            android:textColor="#76FF03"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:layout_width="40sp"
+            android:id="@+id/ckNhoMatKhau"
+            android:layout_marginRight="20sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_height="60sp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DD2C00"
+            android:id="@+id/btnLogin"
+            android:textColor="@android:color/white"
+            android:text="@string/login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="50sp"
+        android:layout_height="30sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="150sp"
+                android:gravity="center"
+                android:background="#DD2C00"
+                android:id="@+id/btnregister"
+                android:textColor="@android:color/white"
+                android:layout_height="30sp"
+                android:text="Đăng kí tài khoản mới"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

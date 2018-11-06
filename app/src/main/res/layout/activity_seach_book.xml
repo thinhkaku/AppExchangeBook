@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarDs"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"/>
+            <include layout="@layout/custom_search_view_ds"/>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_ds"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border_text_bt">
+                <TextView
+                    android:id="@+id/txtLoaiS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Kết quả tìm kiếm"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="20sp"/>
+                <TextView
+                    android:id="@+id/txtQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border_text_bt"
+                android:layout_marginBottom="3sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sắp xếp theo giá"
+                    android:gravity="center|left"
+                    android:paddingLeft="20sp"
+                    android:layout_margin="2sp"
+                    android:background="@drawable/border_text_bt"
+                    android:layout_weight="2"
+                    android:textColor="@android:color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Spinner
+                        android:id="@+id/spLoaiSx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dropDownSelector="#D50000"
+                        android:gravity="center"
+                        android:popupBackground="#E3F2FD"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ln_ds">
+        <GridView
+            android:id="@+id/gvDanhSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="20sp"
+            android:horizontalSpacing="20sp" />
+        <TextView
+            android:id="@+id/txtTbTk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không có kết quả nào!"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/ic_menu_camera"
+            android:background="@drawable/border_text_bt"/>
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/edtNoiDungTinNhan"
+            emojicon:emojiconSize="28sp"
+            android:layout_width="match_parent"
+            android:hint="@string/nhap_tn"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnGuiTinNhan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/border_text_bt"
+            android:src="@drawable/ic_send_black_24dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvNoiDungTinNhan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5sp"
+        android:divider="#00000000"
+        android:dividerHeight="1sp"/>
+
+    <FrameLayout
+        android:id="@+id/frameImage"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_above="@+id/linear1"
+        android:layout_alignParentStart="true"
+        android:background="@color/back_ground_app"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgImageTinNhan"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo9" />
+
+            <ImageButton
+                android:id="@+id/btnXoaHinhTinNhan"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right|top"
+                android:background="@drawable/ic_delete_forever_black_24dp" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

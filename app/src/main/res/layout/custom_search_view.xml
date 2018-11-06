@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnearGianHang"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#880E4F">
+    <ImageButton
+        android:id="@+id/btnDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:src="@drawable/ic_format_list_bulleted_black_24dp"
+        android:background="#00000000"/>
+    <TextView
+        android:id="@+id/btnSearchGianHang"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:paddingLeft="15sp"
+        android:background="@drawable/boder_seachview"
+        android:inputType="textImeMultiLine"
+        android:windowSoftInputMode="stateUnchanged"
+        android:hint="@string/tk"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:textColorHint="@android:color/darker_gray"
+        />
+    <ImageButton
+        android:id="@+id/btnMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#00000000"
+        android:src="@drawable/ic_chat_bubble_black_24dp"/>
+
+</LinearLayout>

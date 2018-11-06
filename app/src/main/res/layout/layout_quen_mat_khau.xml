@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#607D8B"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Điền thông tin"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"
+        android:background="#673AB7"
+        android:textColor="@android:color/white"
+        android:id="@+id/txtFormDangTin"
+        android:textSize="30sp"
+        android:layout_height="100sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Tên tài khoản"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/edtTenTaiKhoan"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Email đăng kí tài khoản"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/edtEmailDangKi"
+        android:inputType="text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="Hủy"
+            android:background="#673AB7"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnHuyLayLaiMatKhau"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Đồng ý"
+                android:background="#673AB7"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnLayLaiMatKhau"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

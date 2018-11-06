@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerAbout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40sp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_weight="10"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="30sp"
+            android:id="@+id/btnBack"
+            android:text="Trở lại"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_gravity="bottom"
+            android:background="#20000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Tiếp"
+                android:id="@+id/btnNext"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_marginLeft="10sp"
+                android:background="#20000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_weight="1"
+        android:layout_gravity="center|bottom"
+        app:piv_animationType="slide"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/yellow"
+        app:piv_unselectedColor="@color/white"
+        app:piv_viewPager="@id/viewPagerAbout"
+        app:piv_padding="12sp"
+        app:piv_radius="8dp" />
+</FrameLayout>

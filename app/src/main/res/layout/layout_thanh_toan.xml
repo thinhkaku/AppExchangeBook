@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:background="@color/cl_bg_app">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/thanh_toan"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:paddingLeft="20sp"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/back_ground_app">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/dia_chi_tt"
+        android:textSize="25sp"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/white"
+        android:background="@color/theme_primary_dark"/>
+    <include layout="@layout/layout_dien_thong_tin_ca_nhan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/phuong_thuc_tt"
+        android:textSize="25sp"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/white"
+        android:background="@color/theme_primary_dark"/>
+    <include layout="@layout/layout_phuong_thuc_tt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/phuong_thuc_vc"
+        android:textSize="25sp"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/white"
+        android:background="@color/theme_primary_dark"/>
+    <include layout="@layout/layout_phuong_thuc_vc"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:text="@string/xn_ap_can_thanh_toan"
+        android:textSize="25sp"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/white"
+        android:background="@color/theme_primary_dark"/>
+    <include layout="@layout/layout_data_sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_weight="5"
+        android:gravity="center|left"
+        android:paddingLeft="20sp"
+        android:text="@string/goi_qua"
+        android:layout_marginTop="20sp"/>
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:background="@drawable/boder_text_canhan"
+        android:text="@string/xn_don_hang"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="25sp"
+        android:layout_marginTop="5sp"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

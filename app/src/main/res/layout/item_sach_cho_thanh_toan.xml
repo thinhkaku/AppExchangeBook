@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:gravity="center"
+    android:layout_marginBottom="10sp"
+    android:background="@drawable/border_text_bt"
+    >
+    <ImageView
+        android:id="@+id/imgSC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:layout_margin="2sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txtTenSC"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sách"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:background="@drawable/border_text_bt"
+            android:padding="5sp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_text_bt">
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="Số lượng"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="3sp">
+                <ImageButton
+                    android:id="@+id/btnRemoveSlC"
+                    android:src="@drawable/ic_remove_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_text_bt"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/txtSLC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+                <ImageButton
+                    android:id="@+id/btnAddSlC"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_text_bt"
+                    android:layout_weight="2"
+                    android:layout_marginRight="7sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <ImageButton
+            android:id="@+id/btnDeleteGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            android:background="@drawable/border_text_bt"/>
+        <CheckBox
+            android:id="@+id/ckSelectS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lnearLogin"
+        android:background="#33691E"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="206dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="40sp"
+            android:background="#00000000"
+            android:scaleType="fitXY" />
+        <EditText
+            android:layout_width="330sp"
+            android:layout_height="60sp"
+            android:paddingLeft="20sp"
+            android:hint="Tài khoản"
+            android:inputType="text"
+            android:id="@+id/edtUserName"
+            android:textColor="@android:color/black"
+            android:background="@drawable/custum_button"/>
+        <EditText
+            android:layout_width="330sp"
+            android:layout_height="60sp"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="15sp"
+            android:hint="Mật khẩu"
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:background="@drawable/custum_button"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:layout_width="150sp"
+                android:text="Nhớ mật khẩu"
+                android:gravity="center|right"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+            <CheckBox
+                android:layout_width="40sp"
+                android:id="@+id/ckNhoMatKhau"
+                android:layout_marginRight="20sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:layout_height="40sp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200sp"
+                android:layout_height="40sp"
+                android:text="Đăng nhập"
+                android:background="#6200EA"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="200sp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:id="@+id/btnregister"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5sp"
+            android:background="#33691E"
+            android:gravity="center"
+            android:text="chưa có tài khoản"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            android:textStyle="italic|bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginTop="10sp"
+            android:layout_height="30sp">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

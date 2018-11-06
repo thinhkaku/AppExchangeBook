@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hinh1"
+        android:layout_width="96dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+
+    <ImageView
+        android:id="@+id/hinh2"
+        android:layout_width="96dp"
+        android:layout_height="97dp"
+        android:layout_alignTop="@+id/hinh1"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_add_circle_black_24dp"/>
+
+    <ImageView
+        android:id="@+id/hinh3"
+        android:layout_width="96dp"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/hinh1"
+        android:layout_marginEnd="21dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+
+    <ImageView
+        android:id="@+id/hinh4"
+        android:layout_width="96dp"
+        android:visibility="invisible"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/hinh1"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+
+    <ImageView
+        android:id="@+id/hinh5"
+        android:layout_width="96dp"
+        android:layout_height="97dp"
+        android:layout_alignTop="@+id/hinh4"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="ifContentScrolls">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnFormsCaNhan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+
+                <Button
+                    android:id="@+id/btnBaiDangCN"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="@string/bd_ca_nhan"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/theme_primary_dark"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleBaiDangCN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnEditInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chinh_sua_thong_tin"
+                android:textSize="12sp"
+                android:paddingLeft="10sp"
+                android:background="@drawable/border_text_bt"
+                android:gravity="center|left"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_mode_edit_black_24dp"/>
+            <include layout="@layout/layout_dien_thong_tin_ca_nhan"/>
+            <include layout="@layout/layout_more_ca_nhan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnHideDang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:gravity="center|top"
+            android:paddingTop="150sp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/not_login"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnDangNhapGianHang"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/border_text_bt"
+                android:text="@string/dang_nhap" />
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>

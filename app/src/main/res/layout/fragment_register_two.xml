@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Địa chỉ"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4" />
+
+    <EditText
+        android:id="@+id/edtTenTaiKhoanDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tên tài khoản"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4"/>
+
+    <EditText
+        android:id="@+id/edtMatKhauDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Mật khẩu"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4"/>
+
+    <Button
+        android:id="@+id/btnDangKiTiep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="216dp"
+        android:text="Tiếp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dangnhap"/>
+
+    <Button
+        android:id="@+id/btnTroLaiDangKi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnDangKiTiep2"
+        android:layout_marginStart="49dp"
+        android:text="Trở lại"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dangnhap"/>
+</RelativeLayout>

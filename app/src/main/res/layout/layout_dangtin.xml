@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cl_bg_app"
+    android:gravity="top"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FF9800"
+        android:layout_height="?actionBarSize">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/btnBackDang"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_weight="4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Đăng tin"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingLeft="20sp"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/btnDangBai"
+            android:src="@drawable/ic_backup_black_24dp"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentDangTin"></FrameLayout>
+</LinearLayout>

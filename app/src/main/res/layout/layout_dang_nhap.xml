@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgone"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="Tradosa"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:background="@drawable/boder_text_canhan"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/btnDangNhapFrag"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/dang_nhap"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/btnDangKiFrag"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Đăng kí"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:orientation="vertical"
+            android:id="@+id/dangNhapDangKi"/>
+
+</LinearLayout>

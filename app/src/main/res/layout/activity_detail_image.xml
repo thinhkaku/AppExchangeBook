@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DetailImageActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Hình ảnh"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginBottom="50sp"
+        android:id="@+id/imgChiTietHinhAnh"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="?actionBarSize"
+        android:id="@+id/progesstBarLoad"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progresscustombg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tải hình"
+            android:textColor="@android:color/white"
+            android:paddingLeft="25sp"
+            android:background="#607D8B"
+            android:drawableLeft="@drawable/ic_file_download_black_24dp"
+            android:id="@+id/btnTaiImage"/>
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            android:paddingLeft="25sp"
+            android:background="#607D8B"
+            android:drawableLeft="@drawable/ic_screen_share_black_24dp"
+            android:id="@+id/btnShareImage"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FB8C00"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:text="Đăng kí"
+        android:id="@+id/txtTieuDeDangKi"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+    <EditText
+        android:id="@+id/edtFisrtName"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Họ"
+        android:paddingLeft="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="40sp"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_marginTop="15sp"
+
+        android:hint="Tên"
+        android:paddingLeft="20sp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:singleLine="true"
+        android:layout_height="40sp"
+        android:paddingLeft="20sp"
+        android:hint="Tài khoản"
+        android:inputType="text"
+        android:layout_marginTop="15sp"
+        android:id="@+id/edtUserName1"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtPassword1"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="15sp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:paddingLeft="20sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtRequester"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="40sp"
+        android:singleLine="true"
+        android:layout_marginTop="15sp"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        android:paddingLeft="20sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="40sp"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_marginTop="15sp"
+        android:hint="Gmail"
+        android:paddingLeft="20sp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:id="@+id/edtSdt"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="40sp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_marginTop="15sp"
+        android:hint="Số điện thoại"
+        android:paddingLeft="20sp"
+        android:textColor="@android:color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBackRegister"
+            android:textColor="@android:color/white"
+            android:background="#DD2C00"
+            android:text="Hủy"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="100sp"
+                android:text="Tiếp"
+                android:id="@+id/btnDangKiTiep"
+                android:textColor="@android:color/white"
+                android:background="#DD2C00"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
